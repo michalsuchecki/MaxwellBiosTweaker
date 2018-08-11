@@ -9,7 +9,6 @@ public class UCVoltageTable : UserControl, ComponenteDaTela
     private BoostTable _BoostTable;
     private PerfTable _PerfTable;
     private VoltageTable _VoltageTable;
-    private IContainer components;
 
     internal BoostTable BoostTable
     {
@@ -146,13 +145,6 @@ public class UCVoltageTable : UserControl, ComponenteDaTela
         }
 
         return list.ToArray();
-    }
-
-    protected override void Dispose(bool disposing)
-    {
-        if (disposing && components != null)
-            components.Dispose();
-        base.Dispose(disposing);
     }
 
     private void InitializeComponent()

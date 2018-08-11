@@ -176,205 +176,205 @@ public class UCboostConfigEntryControl : UserControl, ComponenteDaTela
 
     private void InitializeComponent()
     {
-        this.tbBoostMax0Clock2 = new System.Windows.Forms.TextBox();
-        this.tbBoostMin0Clock2 = new System.Windows.Forms.TextBox();
-        this.tbBoostMax0Clock1 = new System.Windows.Forms.TextBox();
-        this.tbBoostMin0Clock1 = new System.Windows.Forms.TextBox();
-        this.tbBoostMax0Clock0 = new System.Windows.Forms.TextBox();
-        this.tbBoostMin0Clock0 = new System.Windows.Forms.TextBox();
-        this.tbProfileBoostMax0 = new System.Windows.Forms.TextBox();
-        this.tbProfileBoostMin0 = new System.Windows.Forms.TextBox();
-        this.lblProfileBoost0 = new System.Windows.Forms.Label();
-        this.lblBoostProfileMinClock = new System.Windows.Forms.Label();
-        this.lblBoostProfileMaxClock = new System.Windows.Forms.Label();
-        this.lblBoostProfileMinClock0 = new System.Windows.Forms.Label();
-        this.lblBoostProfileMaxClock0 = new System.Windows.Forms.Label();
-        this.lblBoostProfileMinClock1 = new System.Windows.Forms.Label();
-        this.lblBoostProfileMaxClock1 = new System.Windows.Forms.Label();
-        this.lblBoostProfileMinClock2 = new System.Windows.Forms.Label();
-        this.lblBoostProfileMaxClock2 = new System.Windows.Forms.Label();
-        this.label10 = new System.Windows.Forms.Label();
-        this.SuspendLayout();
-        // 
-        // tbBoostMax0Clock2
-        // 
-        this.tbBoostMax0Clock2.Location = new System.Drawing.Point(357, 28);
-        this.tbBoostMax0Clock2.Name = "tbBoostMax0Clock2";
-        this.tbBoostMax0Clock2.Size = new System.Drawing.Size(42, 20);
-        this.tbBoostMax0Clock2.TabIndex = 68;
-        this.tbBoostMax0Clock2.TextChanged += new System.EventHandler(this.AnyTextChanged);
-        // 
-        // tbBoostMin0Clock2
-        // 
-        this.tbBoostMin0Clock2.Location = new System.Drawing.Point(276, 28);
-        this.tbBoostMin0Clock2.Name = "tbBoostMin0Clock2";
-        this.tbBoostMin0Clock2.Size = new System.Drawing.Size(42, 20);
-        this.tbBoostMin0Clock2.TabIndex = 67;
-        this.tbBoostMin0Clock2.TextChanged += new System.EventHandler(this.AnyTextChanged);
-        // 
-        // tbBoostMax0Clock1
-        // 
-        this.tbBoostMax0Clock1.Location = new System.Drawing.Point(194, 28);
-        this.tbBoostMax0Clock1.Name = "tbBoostMax0Clock1";
-        this.tbBoostMax0Clock1.Size = new System.Drawing.Size(42, 20);
-        this.tbBoostMax0Clock1.TabIndex = 66;
-        this.tbBoostMax0Clock1.TextChanged += new System.EventHandler(this.AnyTextChanged);
-        // 
-        // tbBoostMin0Clock1
-        // 
-        this.tbBoostMin0Clock1.Location = new System.Drawing.Point(113, 28);
-        this.tbBoostMin0Clock1.Name = "tbBoostMin0Clock1";
-        this.tbBoostMin0Clock1.Size = new System.Drawing.Size(42, 20);
-        this.tbBoostMin0Clock1.TabIndex = 65;
-        this.tbBoostMin0Clock1.TextChanged += new System.EventHandler(this.AnyTextChanged);
-        // 
-        // tbBoostMax0Clock0
-        // 
-        this.tbBoostMax0Clock0.Location = new System.Drawing.Point(357, 2);
-        this.tbBoostMax0Clock0.Name = "tbBoostMax0Clock0";
-        this.tbBoostMax0Clock0.Size = new System.Drawing.Size(42, 20);
-        this.tbBoostMax0Clock0.TabIndex = 64;
-        this.tbBoostMax0Clock0.TextChanged += new System.EventHandler(this.AnyTextChanged);
-        // 
-        // tbBoostMin0Clock0
-        // 
-        this.tbBoostMin0Clock0.Location = new System.Drawing.Point(276, 2);
-        this.tbBoostMin0Clock0.Name = "tbBoostMin0Clock0";
-        this.tbBoostMin0Clock0.Size = new System.Drawing.Size(42, 20);
-        this.tbBoostMin0Clock0.TabIndex = 63;
-        this.tbBoostMin0Clock0.TextChanged += new System.EventHandler(this.AnyTextChanged);
-        // 
-        // tbProfileBoostMax0
-        // 
-        this.tbProfileBoostMax0.Location = new System.Drawing.Point(194, 2);
-        this.tbProfileBoostMax0.Name = "tbProfileBoostMax0";
-        this.tbProfileBoostMax0.Size = new System.Drawing.Size(42, 20);
-        this.tbProfileBoostMax0.TabIndex = 62;
-        this.tbProfileBoostMax0.TextChanged += new System.EventHandler(this.AnyTextChanged);
-        // 
-        // tbProfileBoostMin0
-        // 
-        this.tbProfileBoostMin0.Location = new System.Drawing.Point(113, 2);
-        this.tbProfileBoostMin0.Name = "tbProfileBoostMin0";
-        this.tbProfileBoostMin0.Size = new System.Drawing.Size(42, 20);
-        this.tbProfileBoostMin0.TabIndex = 61;
-        this.tbProfileBoostMin0.TextChanged += new System.EventHandler(this.AnyTextChanged);
-        // 
-        // lblProfileBoost0
-        // 
-        this.lblProfileBoost0.AutoSize = true;
-        this.lblProfileBoost0.Location = new System.Drawing.Point(3, 5);
-        this.lblProfileBoost0.Name = "lblProfileBoost0";
-        this.lblProfileBoost0.Size = new System.Drawing.Size(67, 13);
-        this.lblProfileBoost0.TabIndex = 56;
-        this.lblProfileBoost0.Text = "P00 - Profile:";
-        // 
-        // lblBoostProfileMinClock
-        // 
-        this.lblBoostProfileMinClock.Location = new System.Drawing.Point(74, 5);
-        this.lblBoostProfileMinClock.Name = "lblBoostProfileMinClock";
-        this.lblBoostProfileMinClock.Size = new System.Drawing.Size(38, 13);
-        this.lblBoostProfileMinClock.TabIndex = 82;
-        this.lblBoostProfileMinClock.Text = "GPC";
-        this.lblBoostProfileMinClock.TextAlign = System.Drawing.ContentAlignment.TopRight;
-        // 
-        // lblBoostProfileMaxClock
-        // 
-        this.lblBoostProfileMaxClock.Location = new System.Drawing.Point(156, 5);
-        this.lblBoostProfileMaxClock.Name = "lblBoostProfileMaxClock";
-        this.lblBoostProfileMaxClock.Size = new System.Drawing.Size(37, 13);
-        this.lblBoostProfileMaxClock.TabIndex = 82;
-        this.lblBoostProfileMaxClock.Text = "GPC";
-        this.lblBoostProfileMaxClock.TextAlign = System.Drawing.ContentAlignment.TopRight;
-        // 
-        // lblBoostProfileMinClock0
-        // 
-        this.lblBoostProfileMinClock0.Location = new System.Drawing.Point(237, 5);
-        this.lblBoostProfileMinClock0.Name = "lblBoostProfileMinClock0";
-        this.lblBoostProfileMinClock0.Size = new System.Drawing.Size(38, 13);
-        this.lblBoostProfileMinClock0.TabIndex = 80;
-        this.lblBoostProfileMinClock0.Text = "L2C";
-        this.lblBoostProfileMinClock0.TextAlign = System.Drawing.ContentAlignment.TopRight;
-        // 
-        // lblBoostProfileMaxClock0
-        // 
-        this.lblBoostProfileMaxClock0.Location = new System.Drawing.Point(319, 5);
-        this.lblBoostProfileMaxClock0.Name = "lblBoostProfileMaxClock0";
-        this.lblBoostProfileMaxClock0.Size = new System.Drawing.Size(37, 13);
-        this.lblBoostProfileMaxClock0.TabIndex = 80;
-        this.lblBoostProfileMaxClock0.Text = "L2C";
-        this.lblBoostProfileMaxClock0.TextAlign = System.Drawing.ContentAlignment.TopRight;
-        // 
-        // lblBoostProfileMinClock1
-        // 
-        this.lblBoostProfileMinClock1.Location = new System.Drawing.Point(74, 31);
-        this.lblBoostProfileMinClock1.Name = "lblBoostProfileMinClock1";
-        this.lblBoostProfileMinClock1.Size = new System.Drawing.Size(38, 13);
-        this.lblBoostProfileMinClock1.TabIndex = 83;
-        this.lblBoostProfileMinClock1.Text = "XBAR";
-        this.lblBoostProfileMinClock1.TextAlign = System.Drawing.ContentAlignment.TopRight;
-        // 
-        // lblBoostProfileMaxClock1
-        // 
-        this.lblBoostProfileMaxClock1.Location = new System.Drawing.Point(156, 31);
-        this.lblBoostProfileMaxClock1.Name = "lblBoostProfileMaxClock1";
-        this.lblBoostProfileMaxClock1.Size = new System.Drawing.Size(37, 13);
-        this.lblBoostProfileMaxClock1.TabIndex = 83;
-        this.lblBoostProfileMaxClock1.Text = "XBAR";
-        this.lblBoostProfileMaxClock1.TextAlign = System.Drawing.ContentAlignment.TopRight;
-        // 
-        // lblBoostProfileMinClock2
-        // 
-        this.lblBoostProfileMinClock2.Location = new System.Drawing.Point(237, 31);
-        this.lblBoostProfileMinClock2.Name = "lblBoostProfileMinClock2";
-        this.lblBoostProfileMinClock2.Size = new System.Drawing.Size(38, 13);
-        this.lblBoostProfileMinClock2.TabIndex = 87;
-        this.lblBoostProfileMinClock2.Text = "SYS";
-        this.lblBoostProfileMinClock2.TextAlign = System.Drawing.ContentAlignment.TopRight;
-        // 
-        // lblBoostProfileMaxClock2
-        // 
-        this.lblBoostProfileMaxClock2.Location = new System.Drawing.Point(319, 31);
-        this.lblBoostProfileMaxClock2.Name = "lblBoostProfileMaxClock2";
-        this.lblBoostProfileMaxClock2.Size = new System.Drawing.Size(37, 13);
-        this.lblBoostProfileMaxClock2.TabIndex = 87;
-        this.lblBoostProfileMaxClock2.Text = "SYS";
-        this.lblBoostProfileMaxClock2.TextAlign = System.Drawing.ContentAlignment.TopRight;
-        // 
-        // label10
-        // 
-        this.label10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-        this.label10.Location = new System.Drawing.Point(3, 56);
-        this.label10.Name = "label10";
-        this.label10.Size = new System.Drawing.Size(398, 1);
-        this.label10.TabIndex = 88;
-        // 
-        // UCboostConfigEntryControl
-        // 
-        this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-        this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-        this.Controls.Add(this.label10);
-        this.Controls.Add(this.lblBoostProfileMaxClock2);
-        this.Controls.Add(this.lblBoostProfileMinClock2);
-        this.Controls.Add(this.lblBoostProfileMaxClock0);
-        this.Controls.Add(this.lblBoostProfileMinClock0);
-        this.Controls.Add(this.lblBoostProfileMaxClock1);
-        this.Controls.Add(this.lblBoostProfileMinClock1);
-        this.Controls.Add(this.lblBoostProfileMaxClock);
-        this.Controls.Add(this.lblBoostProfileMinClock);
-        this.Controls.Add(this.tbBoostMax0Clock2);
-        this.Controls.Add(this.tbBoostMin0Clock2);
-        this.Controls.Add(this.tbBoostMax0Clock1);
-        this.Controls.Add(this.tbBoostMin0Clock1);
-        this.Controls.Add(this.tbBoostMax0Clock0);
-        this.Controls.Add(this.tbBoostMin0Clock0);
-        this.Controls.Add(this.tbProfileBoostMax0);
-        this.Controls.Add(this.tbProfileBoostMin0);
-        this.Controls.Add(this.lblProfileBoost0);
-        this.Name = "UCboostConfigEntryControl";
-        this.Size = new System.Drawing.Size(404, 64);
-        this.ResumeLayout(false);
-        this.PerformLayout();
+            this.tbBoostMax0Clock2 = new System.Windows.Forms.TextBox();
+            this.tbBoostMin0Clock2 = new System.Windows.Forms.TextBox();
+            this.tbBoostMax0Clock1 = new System.Windows.Forms.TextBox();
+            this.tbBoostMin0Clock1 = new System.Windows.Forms.TextBox();
+            this.tbBoostMax0Clock0 = new System.Windows.Forms.TextBox();
+            this.tbBoostMin0Clock0 = new System.Windows.Forms.TextBox();
+            this.tbProfileBoostMax0 = new System.Windows.Forms.TextBox();
+            this.tbProfileBoostMin0 = new System.Windows.Forms.TextBox();
+            this.lblProfileBoost0 = new System.Windows.Forms.Label();
+            this.lblBoostProfileMinClock = new System.Windows.Forms.Label();
+            this.lblBoostProfileMaxClock = new System.Windows.Forms.Label();
+            this.lblBoostProfileMinClock0 = new System.Windows.Forms.Label();
+            this.lblBoostProfileMaxClock0 = new System.Windows.Forms.Label();
+            this.lblBoostProfileMinClock1 = new System.Windows.Forms.Label();
+            this.lblBoostProfileMaxClock1 = new System.Windows.Forms.Label();
+            this.lblBoostProfileMinClock2 = new System.Windows.Forms.Label();
+            this.lblBoostProfileMaxClock2 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // tbBoostMax0Clock2
+            // 
+            this.tbBoostMax0Clock2.Location = new System.Drawing.Point(357, 28);
+            this.tbBoostMax0Clock2.Name = "tbBoostMax0Clock2";
+            this.tbBoostMax0Clock2.Size = new System.Drawing.Size(42, 20);
+            this.tbBoostMax0Clock2.TabIndex = 68;
+            this.tbBoostMax0Clock2.TextChanged += new System.EventHandler(this.AnyTextChanged);
+            // 
+            // tbBoostMin0Clock2
+            // 
+            this.tbBoostMin0Clock2.Location = new System.Drawing.Point(276, 28);
+            this.tbBoostMin0Clock2.Name = "tbBoostMin0Clock2";
+            this.tbBoostMin0Clock2.Size = new System.Drawing.Size(42, 20);
+            this.tbBoostMin0Clock2.TabIndex = 67;
+            this.tbBoostMin0Clock2.TextChanged += new System.EventHandler(this.AnyTextChanged);
+            // 
+            // tbBoostMax0Clock1
+            // 
+            this.tbBoostMax0Clock1.Location = new System.Drawing.Point(194, 28);
+            this.tbBoostMax0Clock1.Name = "tbBoostMax0Clock1";
+            this.tbBoostMax0Clock1.Size = new System.Drawing.Size(42, 20);
+            this.tbBoostMax0Clock1.TabIndex = 66;
+            this.tbBoostMax0Clock1.TextChanged += new System.EventHandler(this.AnyTextChanged);
+            // 
+            // tbBoostMin0Clock1
+            // 
+            this.tbBoostMin0Clock1.Location = new System.Drawing.Point(113, 28);
+            this.tbBoostMin0Clock1.Name = "tbBoostMin0Clock1";
+            this.tbBoostMin0Clock1.Size = new System.Drawing.Size(42, 20);
+            this.tbBoostMin0Clock1.TabIndex = 65;
+            this.tbBoostMin0Clock1.TextChanged += new System.EventHandler(this.AnyTextChanged);
+            // 
+            // tbBoostMax0Clock0
+            // 
+            this.tbBoostMax0Clock0.Location = new System.Drawing.Point(357, 2);
+            this.tbBoostMax0Clock0.Name = "tbBoostMax0Clock0";
+            this.tbBoostMax0Clock0.Size = new System.Drawing.Size(42, 20);
+            this.tbBoostMax0Clock0.TabIndex = 64;
+            this.tbBoostMax0Clock0.TextChanged += new System.EventHandler(this.AnyTextChanged);
+            // 
+            // tbBoostMin0Clock0
+            // 
+            this.tbBoostMin0Clock0.Location = new System.Drawing.Point(276, 2);
+            this.tbBoostMin0Clock0.Name = "tbBoostMin0Clock0";
+            this.tbBoostMin0Clock0.Size = new System.Drawing.Size(42, 20);
+            this.tbBoostMin0Clock0.TabIndex = 63;
+            this.tbBoostMin0Clock0.TextChanged += new System.EventHandler(this.AnyTextChanged);
+            // 
+            // tbProfileBoostMax0
+            // 
+            this.tbProfileBoostMax0.Location = new System.Drawing.Point(194, 2);
+            this.tbProfileBoostMax0.Name = "tbProfileBoostMax0";
+            this.tbProfileBoostMax0.Size = new System.Drawing.Size(42, 20);
+            this.tbProfileBoostMax0.TabIndex = 62;
+            this.tbProfileBoostMax0.TextChanged += new System.EventHandler(this.AnyTextChanged);
+            // 
+            // tbProfileBoostMin0
+            // 
+            this.tbProfileBoostMin0.Location = new System.Drawing.Point(113, 2);
+            this.tbProfileBoostMin0.Name = "tbProfileBoostMin0";
+            this.tbProfileBoostMin0.Size = new System.Drawing.Size(42, 20);
+            this.tbProfileBoostMin0.TabIndex = 61;
+            this.tbProfileBoostMin0.TextChanged += new System.EventHandler(this.AnyTextChanged);
+            // 
+            // lblProfileBoost0
+            // 
+            this.lblProfileBoost0.AutoSize = true;
+            this.lblProfileBoost0.Location = new System.Drawing.Point(3, 5);
+            this.lblProfileBoost0.Name = "lblProfileBoost0";
+            this.lblProfileBoost0.Size = new System.Drawing.Size(67, 13);
+            this.lblProfileBoost0.TabIndex = 56;
+            this.lblProfileBoost0.Text = "P00 - Profile:";
+            // 
+            // lblBoostProfileMinClock
+            // 
+            this.lblBoostProfileMinClock.Location = new System.Drawing.Point(74, 5);
+            this.lblBoostProfileMinClock.Name = "lblBoostProfileMinClock";
+            this.lblBoostProfileMinClock.Size = new System.Drawing.Size(38, 13);
+            this.lblBoostProfileMinClock.TabIndex = 82;
+            this.lblBoostProfileMinClock.Text = "GPC";
+            this.lblBoostProfileMinClock.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // lblBoostProfileMaxClock
+            // 
+            this.lblBoostProfileMaxClock.Location = new System.Drawing.Point(156, 5);
+            this.lblBoostProfileMaxClock.Name = "lblBoostProfileMaxClock";
+            this.lblBoostProfileMaxClock.Size = new System.Drawing.Size(37, 13);
+            this.lblBoostProfileMaxClock.TabIndex = 82;
+            this.lblBoostProfileMaxClock.Text = "-";
+            this.lblBoostProfileMaxClock.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBoostProfileMinClock0
+            // 
+            this.lblBoostProfileMinClock0.Location = new System.Drawing.Point(237, 5);
+            this.lblBoostProfileMinClock0.Name = "lblBoostProfileMinClock0";
+            this.lblBoostProfileMinClock0.Size = new System.Drawing.Size(38, 13);
+            this.lblBoostProfileMinClock0.TabIndex = 80;
+            this.lblBoostProfileMinClock0.Text = "L2C";
+            this.lblBoostProfileMinClock0.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // lblBoostProfileMaxClock0
+            // 
+            this.lblBoostProfileMaxClock0.Location = new System.Drawing.Point(319, 5);
+            this.lblBoostProfileMaxClock0.Name = "lblBoostProfileMaxClock0";
+            this.lblBoostProfileMaxClock0.Size = new System.Drawing.Size(37, 13);
+            this.lblBoostProfileMaxClock0.TabIndex = 80;
+            this.lblBoostProfileMaxClock0.Text = "-";
+            this.lblBoostProfileMaxClock0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBoostProfileMinClock1
+            // 
+            this.lblBoostProfileMinClock1.Location = new System.Drawing.Point(74, 31);
+            this.lblBoostProfileMinClock1.Name = "lblBoostProfileMinClock1";
+            this.lblBoostProfileMinClock1.Size = new System.Drawing.Size(38, 13);
+            this.lblBoostProfileMinClock1.TabIndex = 83;
+            this.lblBoostProfileMinClock1.Text = "XBAR";
+            this.lblBoostProfileMinClock1.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // lblBoostProfileMaxClock1
+            // 
+            this.lblBoostProfileMaxClock1.Location = new System.Drawing.Point(156, 31);
+            this.lblBoostProfileMaxClock1.Name = "lblBoostProfileMaxClock1";
+            this.lblBoostProfileMaxClock1.Size = new System.Drawing.Size(37, 13);
+            this.lblBoostProfileMaxClock1.TabIndex = 83;
+            this.lblBoostProfileMaxClock1.Text = "-";
+            this.lblBoostProfileMaxClock1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBoostProfileMinClock2
+            // 
+            this.lblBoostProfileMinClock2.Location = new System.Drawing.Point(237, 31);
+            this.lblBoostProfileMinClock2.Name = "lblBoostProfileMinClock2";
+            this.lblBoostProfileMinClock2.Size = new System.Drawing.Size(38, 13);
+            this.lblBoostProfileMinClock2.TabIndex = 87;
+            this.lblBoostProfileMinClock2.Text = "SYS";
+            this.lblBoostProfileMinClock2.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // lblBoostProfileMaxClock2
+            // 
+            this.lblBoostProfileMaxClock2.Location = new System.Drawing.Point(319, 31);
+            this.lblBoostProfileMaxClock2.Name = "lblBoostProfileMaxClock2";
+            this.lblBoostProfileMaxClock2.Size = new System.Drawing.Size(37, 13);
+            this.lblBoostProfileMaxClock2.TabIndex = 87;
+            this.lblBoostProfileMaxClock2.Text = "-";
+            this.lblBoostProfileMaxClock2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label10
+            // 
+            this.label10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label10.Location = new System.Drawing.Point(3, 56);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(398, 1);
+            this.label10.TabIndex = 88;
+            // 
+            // UCboostConfigEntryControl
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.lblBoostProfileMaxClock2);
+            this.Controls.Add(this.lblBoostProfileMinClock2);
+            this.Controls.Add(this.lblBoostProfileMaxClock0);
+            this.Controls.Add(this.lblBoostProfileMinClock0);
+            this.Controls.Add(this.lblBoostProfileMaxClock1);
+            this.Controls.Add(this.lblBoostProfileMinClock1);
+            this.Controls.Add(this.lblBoostProfileMaxClock);
+            this.Controls.Add(this.lblBoostProfileMinClock);
+            this.Controls.Add(this.tbBoostMax0Clock2);
+            this.Controls.Add(this.tbBoostMin0Clock2);
+            this.Controls.Add(this.tbBoostMax0Clock1);
+            this.Controls.Add(this.tbBoostMin0Clock1);
+            this.Controls.Add(this.tbBoostMax0Clock0);
+            this.Controls.Add(this.tbBoostMin0Clock0);
+            this.Controls.Add(this.tbProfileBoostMax0);
+            this.Controls.Add(this.tbProfileBoostMin0);
+            this.Controls.Add(this.lblProfileBoost0);
+            this.Name = "UCboostConfigEntryControl";
+            this.Size = new System.Drawing.Size(404, 64);
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
     }
 }

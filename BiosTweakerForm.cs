@@ -22,7 +22,6 @@ namespace MaxwellBiosTweaker
         private NvFlashHelper nvFlashHelper = new NvFlashHelper();
         private readonly List<ComponenteDaTela> componentesDaTela;
         private Bios Bios;
-        private IContainer E003;
         private GroupBox gbInfo;
         private TabControl tabControl;
         private TabPage tpClockStates;
@@ -101,16 +100,16 @@ namespace MaxwellBiosTweaker
             tabControl.Enabled = false;
         }
 
-        private void AbrirBios(string param0_1)
+        private void AbrirBios(string path)
         {
             LimparTela();
-            Bios = new Bios(param0_1);
+            Bios = new Bios(path);
 
             if (Bios.PE000)
             {
                 LinhaBios linhaBios = Bios.linhasDaBios[0];
                 hcHeader.RomHeader = linhaBios.RomHeader;
-                hcHeader.FileName = new FileInfo(param0_1).Name;
+                hcHeader.FileName = new FileInfo(path).Name;
                 hcHeader.ImageChecksum = linhaBios.ImageChecksum;
                 hcHeader.GeneratedChecksum = linhaBios.GenerateChecksum();
 
@@ -193,17 +192,19 @@ namespace MaxwellBiosTweaker
                 AbrirBios(commandLineArgs[1]);
         }
 
-        private void btnOpen_Click(object param0, EventArgs param1)
+        private void BtnOpen_Click(object param0, EventArgs param1)
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.DefaultExt = "*.rom";
-            openFileDialog.Filter = "BIOS Files|*.rom;*.bin";
+            OpenFileDialog openFileDialog = new OpenFileDialog
+            {
+                DefaultExt = "*.rom",
+                Filter = "BIOS Files|*.rom;*.bin"
+            };
             if (openFileDialog.ShowDialog() != DialogResult.OK)
                 return;
             AbrirBios(openFileDialog.FileName);
         }
 
-        private void btnSave_Click(object param0, EventArgs param1)
+        private void BtnSave_Click(object param0, EventArgs param1)
         {
             if (Bios == null || !Bios.PE000)
                 return;
@@ -212,13 +213,15 @@ namespace MaxwellBiosTweaker
             AbrirBios(Bios.caminhoArquivo);
         }
 
-        private void btnSaveAs_Click(object param0, EventArgs param1)
+        private void BtnSaveAs_Click(object param0, EventArgs param1)
         {
             if (Bios == null || !Bios.PE000)
                 return;
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.DefaultExt = "*.rom";
-            saveFileDialog.Filter = "BIOS ROM|*.rom";
+            SaveFileDialog saveFileDialog = new SaveFileDialog
+            {
+                DefaultExt = "*.rom",
+                Filter = "BIOS ROM|*.rom"
+            };
             if (saveFileDialog.ShowDialog() != DialogResult.OK)
                 return;
             AplicarAlteracoes();
@@ -242,7 +245,7 @@ namespace MaxwellBiosTweaker
                 param1.Effect = DragDropEffects.None;
         }
 
-        private void btnFlash_Click(object param0, EventArgs param1)
+        private void BtnFlash_Click(object param0, EventArgs param1)
         {
             if (Bios == null || !Bios.PE000)
                 return;
@@ -251,12 +254,12 @@ namespace MaxwellBiosTweaker
             nvFlashHelper.SubirBiosParaGPU(Bios.caminhoArquivo);
         }
 
-        private void btnRead_Click(object param0, EventArgs param1)
+        private void BtnRead_Click(object param0, EventArgs param1)
         {
             AbrirBios(nvFlashHelper.BaixarBiosDaGPU());
         }
 
-        private void btnGpuCLockOffsetHelper_Click(object param0, EventArgs param1)
+        private void BtnGpuCLockOffsetHelper_Click(object param0, EventArgs param1)
         {
             if (!bbcBaseBoost.StepAllowed || !btcBoostClocks.StepAllowed)
                 return;
@@ -264,7 +267,7 @@ namespace MaxwellBiosTweaker
             btcBoostClocks.AddStep();
         }
 
-        private void btnVoltToClock_Click(object param0, EventArgs param1)
+        private void BtnVoltToClock_Click(object param0, EventArgs param1)
         {
             if (Bios == null || !Bios.PE000)
                 return;
@@ -295,7 +298,7 @@ namespace MaxwellBiosTweaker
             var obj3 = obj2.VoltageTable.ListaVoltagens[E000.Index];
             
             // ISSUE: reference to a compiler-generated method
-            Voltage obj4 = obj2.PerfTable.Voltages.Where(x).FirstOrDefault();
+            Voltage obj4 = obj2.PerfTable.Voltages.Where(X).FirstOrDefault();
             
             string str = "";
             if (obj4 != null)
@@ -307,12 +310,12 @@ namespace MaxwellBiosTweaker
             //return "";
         }
 
-        private bool x(Voltage arg)
+        private bool X(Voltage arg)
         {
             return true;
         }
         
-        private void hcHeader_DoubleClick(object param0, EventArgs param1)
+        private void HcHeader_DoubleClick(object param0, EventArgs param1)
         {
             int num = (int)MessageBox.Show("Header");
         }
@@ -321,21 +324,18 @@ namespace MaxwellBiosTweaker
         {
         }
 
-        private void btBITEntires_Click(object param0, EventArgs param1)
+        private void BtBITEntires_Click(object param0, EventArgs param1)
         {
 
         }
 
-        private void btCompare_Click(object param0, EventArgs param1)
+        private void BtCompare_Click(object param0, EventArgs param1)
         {
 
         }
 
         protected override void Dispose(bool disposing)
         {
-            if (disposing && E003 != null)
-                E003.Dispose();
-
             base.Dispose(disposing);
         }
 
@@ -425,7 +425,7 @@ namespace MaxwellBiosTweaker
             btCompare.TabIndex = 28;
             btCompare.Text = "Compare";
             btCompare.UseVisualStyleBackColor = true;
-            btCompare.Click += btCompare_Click;
+            btCompare.Click += BtCompare_Click;
             // 
             // btBITEntires
             // 
@@ -435,7 +435,7 @@ namespace MaxwellBiosTweaker
             btBITEntires.TabIndex = 27;
             btBITEntires.Text = "BIT Entires";
             btBITEntires.UseVisualStyleBackColor = true;
-            btBITEntires.Click += btBITEntires_Click;
+            btBITEntires.Click += BtBITEntires_Click;
             // 
             // btnVoltToClock
             // 
@@ -445,7 +445,7 @@ namespace MaxwellBiosTweaker
             btnVoltToClock.TabIndex = 26;
             btnVoltToClock.Text = "VoltToClock";
             btnVoltToClock.UseVisualStyleBackColor = true;
-            btnVoltToClock.Click += btnVoltToClock_Click;
+            btnVoltToClock.Click += BtnVoltToClock_Click;
             // 
             // tabControl
             // 
@@ -625,7 +625,7 @@ namespace MaxwellBiosTweaker
             btnGpuCLockOffsetHelper.TabIndex = 3;
             btnGpuCLockOffsetHelper.Text = "GPU Clock Offset + 13MHz";
             btnGpuCLockOffsetHelper.UseVisualStyleBackColor = true;
-            btnGpuCLockOffsetHelper.Click += btnGpuCLockOffsetHelper_Click;
+            btnGpuCLockOffsetHelper.Click += BtnGpuCLockOffsetHelper_Click;
             // 
             // tpPowerTable
             // 
@@ -704,7 +704,7 @@ namespace MaxwellBiosTweaker
             btnOpen.TabIndex = 0;
             btnOpen.Text = "Open BIOS";
             btnOpen.UseVisualStyleBackColor = true;
-            btnOpen.Click += btnOpen_Click;
+            btnOpen.Click += BtnOpen_Click;
             // 
             // btnSave
             // 
@@ -715,7 +715,7 @@ namespace MaxwellBiosTweaker
             btnSave.TabIndex = 1;
             btnSave.Text = "Save BIOS";
             btnSave.UseVisualStyleBackColor = true;
-            btnSave.Click += btnSave_Click;
+            btnSave.Click += BtnSave_Click;
             // 
             // btnSaveAs
             // 
@@ -726,7 +726,7 @@ namespace MaxwellBiosTweaker
             btnSaveAs.TabIndex = 2;
             btnSaveAs.Text = "Save BIOS As";
             btnSaveAs.UseVisualStyleBackColor = true;
-            btnSaveAs.Click += btnSaveAs_Click;
+            btnSaveAs.Click += BtnSaveAs_Click;
             // 
             // btnRead
             // 
@@ -737,7 +737,7 @@ namespace MaxwellBiosTweaker
             btnRead.TabIndex = 3;
             btnRead.Text = "ReadBios";
             btnRead.UseVisualStyleBackColor = true;
-            btnRead.Click += btnRead_Click;
+            btnRead.Click += BtnRead_Click;
             // 
             // btnFlash
             // 
@@ -748,7 +748,7 @@ namespace MaxwellBiosTweaker
             btnFlash.TabIndex = 4;
             btnFlash.Text = "FlashBios";
             btnFlash.UseVisualStyleBackColor = true;
-            btnFlash.Click += btnFlash_Click;
+            btnFlash.Click += BtnFlash_Click;
             // 
             // btcBoostClocks
             // 
@@ -835,7 +835,7 @@ namespace MaxwellBiosTweaker
             hcHeader.Name = "hcHeader";
             hcHeader.Size = new Size(450, 143);
             hcHeader.TabIndex = 0;
-            hcHeader.DoubleClick += hcHeader_DoubleClick;
+            hcHeader.DoubleClick += HcHeader_DoubleClick;
             // 
             // frmMBT
             // 
