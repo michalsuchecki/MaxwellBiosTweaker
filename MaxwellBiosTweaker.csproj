@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\Instalações\Placa de Vídeo\Overclock\gtx-970-980-power-limiter-mod\Maxwe ll Bios Tweaker 1.36\MaxwellBiosTweaker.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5D812052-8909-4E24-939C-68073A73E7BC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>MaxwellBiosTweaker</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.3.6.0</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\BabelAttribute.cs" />
+    <Compile Include="Interfaces\BiosTweakerBase.cs" />
+    <Compile Include="Services\CE001.cs" />
+    <Compile Include="Services\CE002.cs" />
+    <Compile Include="Services\CE004.cs" />
+    <Compile Include="Services\TempTargets.cs" />
+    <Compile Include="Services\Fan\FanSettings2.cs" />
+    <Compile Include="Controls\UCBoostLimitHelperControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Controls\ComponenteDaTela.cs" />
+    <Compile Include="Controls\UCTempTargets.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UCVoltageLine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UCVoltageTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UCPowerTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Services\CE00D.cs" />
+    <Compile Include="Controls\UCBoostConfigControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UCboostConfigEntryControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UCBoostClocks.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UCFanRange.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UCCabecalho.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Services\CE013.cs" />
+    <Compile Include="Controls\CE014.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\BoostLimit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Services\CE016.cs" />
+    <Compile Include="Services\Boost\BoostClock.cs" />
+    <Compile Include="Services\CE018.cs" />
+    <Compile Include="Services\Boost\BoostProfile.cs" />
+    <Compile Include="Services\Fan\FanSettings.cs" />
+    <Compile Include="Services\CE01B.cs" />
+    <Compile Include="Services\Boost\BoostProfileEntry.cs" />
+    <Compile Include="Services\CE01D.cs" />
+    <Compile Include="Services\CE01E.cs" />
+    <Compile Include="Services\CE01F.cs" />
+    <Compile Include="Services\Voltage\VoltageEntry.cs" />
+    <Compile Include="Services\Voltage\VoltageTable.cs" />
+    <Compile Include="Services\Power\PowerEntry.cs" />
+    <Compile Include="Services\Power\PowerTable.cs" />
+    <Compile Include="Services\CE024.cs" />
+    <Compile Include="Services\Voltage\Voltage.cs" />
+    <Compile Include="Services\PerfTable.cs" />
+    <Compile Include="Services\CE027.cs" />
+    <Compile Include="Services\RomHeader.cs" />
+    <Compile Include="Services\Bios\Bios.cs" />
+    <Compile Include="Services\Bios\LinhaBios.cs" />
+    <Compile Include="Services\PCIRChunk.cs" />
+    <Compile Include="Controls\UCPerfTableControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UCPerfTableEntryControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UCMemoryClock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\LvClocks.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Helpers\NvFlashHelper.cs" />
+    <Compile Include="Controls\PowerEntryControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Controls\MaxVoltageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ClockSelectorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Services\CE035.cs" />
+    <Compile Include="BiosTweakerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\BaseBoostControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Helpers\CallerMemberNameAttribute.cs" />
+    <Compile Include="Helpers\ExtensionAttribute.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
